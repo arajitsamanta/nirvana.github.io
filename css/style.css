@@ -173,7 +173,7 @@ header {
 .row-top {
 	width:100%;
 	padding:10px 0;
-	background:#000;
+	background:#000099;
 }
 h1 {
 	padding:0px 0 0 10px;
@@ -223,13 +223,13 @@ h2 span {
 	color:#c52e02;
 }
 .row-bot {
-	width:100%;
+	width:100%;ro
 	background:url(../images/row-bot-tail.gif) center top repeat-x;
 }
 .row-bot-bg {
 	width:100%;
 	min-height:122px;
-	background:url(../images/row-bot-bg.jpg) center top no-repeat;
+	background:#a3c2c2;
 }
 /***** slider *****/
 .slider-wrapper {
