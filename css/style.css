@@ -173,7 +173,7 @@ header {
 .row-top {
 	width:100%;
 	padding:10px 0;
-	background:#000099;
+	background:#0a0a0a;
 }
 h1 {
 	padding:0px 0 0 10px;
@@ -229,7 +229,7 @@ h2 span {
 .row-bot-bg {
 	width:100%;
 	min-height:122px;
-	background:#a3c2c2;
+	background:#795548b3;
 }
 /***** slider *****/
 .slider-wrapper {
@@ -293,7 +293,7 @@ h5 {
 	margin-bottom:2px;
 }
 h6 {
-	color:#769e02;
+	color: #171b0b;
 }
 .border-bot {
 	width:100%;
@@ -332,6 +332,7 @@ h6 {
 	line-height:18px;
 	padding:6px 0 6px 20px;
 	background:url(../images/marker-1.png) 0 12px no-repeat;
+	color: #130101;
 }
 .list-1 a {
 	display:inline-block;
