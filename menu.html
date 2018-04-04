@@ -1,396 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>thenirvanacatering.com | Menu</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/base.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/flexslider.css.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/fonts.css.css" type="text/css" media="screen">
-<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
-<script src="js/cufon-yui.js" type="text/javascript"></script>
-<script src="js/cufon-replace.js" type="text/javascript"></script>
-<script src="js/Dynalight_400.font.js" type="text/javascript"></script>
-<script src="js/FF-cash.js" type="text/javascript"></script>
-<script src="js/jquery.equalheights.js" type="text/javascript"></script>
-<script src="js/jquery.bxSlider.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-    $('#slider').bxSlider({
-        pager: true,
-        controls: false,
-        moveSlideQty: 1,
-        displaySlideQty: 3
+    <title>thenirvanacatering.com | Menu</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="screen">
+    <style>
+   
+    /* Menu section*/
+
+.block-tabs li {
+    border-bottom: 1px solid #f2f2f2;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    margin: 0 -2px;
+    padding: 0 28px;
+    position: relative;
+    top: 1px;
+    color: #353031;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.block-tabs li.active {
+    border-bottom: 2px solid #b0988b;
+}
+.block-tab li {
+    display: none;
+    padding-top: 30px;
+}
+.block-tab li.active {
+    display: block;
+}
+.block-cat h2 {
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: none;
+    color: #a68b7c;
+}
+.block-price {
+    color: #a68b7c;
+    font-weight: 700;
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.col-sm-5{
+	position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  width: 41.66666667%;
+}
+.col-sm-12 {
+    width: 100%;
+    float: left;
+    position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  }
+.col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  .block-cat h2 {
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: none;
+    color: #a68b7c;
+}
+.block-cat h2,
+h1.large {
+    font-family: 'Kristi', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+.mb-25 {
+    margin-bottom: 25px !important;
+}
+.block-content {
+    position: relative;
+    overflow: hidden;
+}
+.pb-25 {
+    padding-bottom: 25px !important;
+}
+.block-price {
+    color: #a68b7c;
+    font-weight: 700;
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.dots {
+    background-image: radial-gradient(circle closest-side, rgba(176, 152, 139, 0.25) 80%, #fff 10%);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: 4px 2px;
+    border: 0 none;
+    display: block;
+    height: 3px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+/* End menu section*/
+    </style>
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+   	<script src="js/cufon-yui.js" type="text/javascript"></script>
+   	<script src="js/cufon-replace.js" type="text/javascript"></script> 
+    <script src="js/Dynalight_400.font.js" type="text/javascript"></script>
+    <script src="js/FF-cash.js" type="text/javascript"></script>
+    <script src="js/jquery.equalheights.js" type="text/javascript"></script>
+    <script src="js/jquery.bxSlider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider').bxSlider({
+            pager: true,
+            controls: false,
+            moveSlideQty: 1,
+            displaySlideQty: 3
+        });
     });
-});
-</script>
-<!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+    $(document).ready(function() {
+        $("ul.tabs a").click(function() {
+            $(".pane div").hide();
+            $($(this).attr("href")).show();
+        });
+    });
+    </script>
+
+    <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
 </head>
+
 <body id="page2">
-<!--==============================header=================================-->
-<header>
-  <div class="row-top">
-    <div class="main">
-      <div class="wrapper">
-        <h1><a href="index.html">thenirvanacatering.com</a></h1>
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html">About</a></li>
-            <li><a class="active" href="menu.html">Menu</a></li>
-            <li><a href="delivery.html">Delivery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-  <div class="row-bot">
-    <div class="row-bot-bg">
-      <div class="main">
-        <h2><span>Impressive Selection for any Occasion</span></h2>
-      </div>
-    </div>
-  </div>
-</header>
-<!--Menu section-->
-         <section id="menu1" class="menu1 pt-120 pb-120 ">
-            <!--Container-->
-            <div class="container1">
-               <!--Row-->
-               <div class="row">
-                  <div class="col-sm-12  mb-100 text-center">
-                     <h1 class="title"> Tasty menu</h1>
-                     <p class="beige">Variety of delicious plate</p>
-                  </div>
-               </div>
-               <!--End row-->
+    <!--==============================header=================================-->
+    <header>
+        <div class="row-top">
+            <div class="main">
+                <div class="wrapper">
+                    <h1><a href="index.html">Best Catering Services in St. Louis</a></h1>
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="index.html">About</a></li>
+                            <li><a class="active" href="menu.html">Menu</a></li>
+                            <li><a href="delivery.html">Delivery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <!--End container-->
-            <!--Container-->
-            <div class="container1">
-               <!--Row-->
-               <div class="row">
-                  <div class="col-sm-12 ">
-                     <!--Tabs-->
-                     <ul class="block-tabs text-center">
+        </div>
+        <div class="row-bot">
+            <div class="row-bot-bg">
+                <div class="main">
+                    <h2><span>Impressive Selection for any Occasion</span></h2>
+                </div>
+            </div>
+        </div>
+    </header>
+   <!--  <section id="content">
+        <div class="main">
+              <div class="wrapper">
+                   <nav>
+                       <ul class="res-menu">
+                           <li><a href="#">Appetizers</a></li>
+                           <li><a id="selected" href="#">Indo Chinese</a></li>
+                           <li><a href="#">Entree</a></li>
+                           <li><a href="#">Desert</a></li>
+                       </ul>
+                   </nav>
+               </div>
+           </div>
+   </section> -->
+
+	<!--Menu section-->
+    <section id="content" class="content">
+        <!--Container-->
+       <!--  <div class="container">
+           Row
+           <div class="row">
+               <div class="col-sm-12  mb-100 text-center">
+                   <h1 class="title"> Tasty menu</h1>
+                   <p class="beige">Variety of delicious plate</p>
+               </div>
+           </div>
+           End row
+       </div> -->
+        <!--End container-->
+        <!--Container-->
+        <div class="container">
+            <!--Row-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <!--Tabs-->
+                    <ul class="block-tabs text-center">
                         <li class="active">Breakfast</li>
                         <li class="">Lunch</li>
                         <li class="">Dessert</li>
                         <li class="">Beverages</li>
-                     </ul>
-                  </div>
-               </div>
-               <!--End row-->
+                    </ul>
+                </div>
             </div>
-            <!--End container-->
-            <!--Container-->
-            <div class="container1">
-               <!--Row-->
-               <div class="row">
-                  <ul class="block-tab mt-40">
-                     <!--Menu list-->
-                     <li class="block-list active">
+            <!--End row-->
+            <!--Row-->
+            <div class="row">
+                <ul class="block-tab mt-40">
+                    <!--Menu list-->
+                    <li class="block-list active">
                         <div class="col-sm-5  col-sm-offset-1 text-center">
-                           <div class="block-cat">
-                              <h2 class="mb-30">omelettes </h2>
-                           </div>
-                           <div class="block-content pb-25 mb-25">
-                              <h2 class="mb-5 ">Tasty Create an Omelette </h2>
-                              <p>Select Any Four of the Following: Bacon, Ham, Sausage, Cheddar.</p>
-                              <span class="block-price">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Farmhouse Omelette </h2>
-                              <p>Sauteed Potatoes, Bacon, Grilled Onions, and Melted Cheese Topped.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Chef's Omelette </h2>
-                              <p>Avocado, Mushrooms, Green Onion, Tomato, Garlic and Shallots.</p>
-                              <span class="block-price ">$14</span> 
-                           </div>
+                           <!--  <div class="block-cat">
+                               <h2 class="mb-30">omelettes </h2>
+                           </div> -->
+                            <div class="block-content pb-25 mb-25">
+                                <h4 class="mb-5">Tasty Create an Omelette </h4>
+                                <span>Select Any Four of the Following: Bacon, Ham, Sausage, Cheddar.</span>
+                                <span class="block-price">$14</span>
+                                <span class="dots"></span>
+                            </div>
+                            <div class="block-content  pb-25 mb-25">
+                                <h4 class="mb-5 ">Farmhouse Omelette </h4>
+                                <span>Sauteed Potatoes, Bacon, Grilled Onions, and Melted Cheese Topped.</span>
+                                <span class="block-price ">$14</span>
+                                <span class="dots"></span>
+                            </div>
+                            <div class="block-content">
+                                <h4 class="mb-5 ">Chef's Omelette </h4>
+                                <span>Avocado, Mushrooms, Green Onion, Tomato, Garlic and Shallots.</span>
+                                <span class="block-price ">$14</span>
+                            </div>
                         </div>
                         <div class="col-sm-5 text-center ">
-                           <div class="block-cat">
-                              <h2 class="mb-30">waffle  </h2>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Waffle Brunch </h2>
-                              <p>A Small Order of French Toast, Bacon and Strawberries.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Waffles Benedict </h2>
-                              <p>Our Benedict Waffle Topped with Maple-Butter Syrup.</p>
-                              <span class="block-price ">$14</span>
-                              <span class="dots"></span> 
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Belgian Waffle  </h2>
-                              <p>Available with Strawberries, Pecans and Chantilly Cream.</p>
-                              <span class="block-price">$14</span>
-                           </div>
+                            <!-- <div class="block-cat">
+                                <h2 class="mb-30">waffle  </h2>
+                            </div> -->
+                            <div class="block-content  pb-25 mb-25">
+                                <h4 class="mb-5 ">Waffle Brunch </h4>
+                                <span>A Small Order of French Toast, Bacon and Strawberries.</span>
+                                <span class="block-price ">$14</span>
+                                <span class="dots"></span>
+                            </div>
+                            <div class="block-content  pb-25 mb-25">
+                                <h4 class="mb-5 ">Waffles Benedict </h4>
+                                <span>Our Benedict Waffle Topped with Maple-Butter Syrup.</span>
+                                <span class="block-price ">$14</span>
+                                <span class="dots"></span>
+                            </div>
+                            <div class="block-content">
+                                <h4 class="mb-5 ">Belgian Waffle  </h4>
+                                <span>Available with Strawberries, Pecans and Chantilly Cream.</span>
+                                <span class="block-price">$14</span>
+                            </div>
                         </div>
-                     </li>
-                     <!--Menu list-->
-                     <li class="block-list">
-                        <div class="col-sm-5  col-sm-offset-1 text-center">
-                           <div class="block-cat">
-                              <h2 class="mb-30">appetizers </h2>
-                           </div>
-                           <div class="block-content pb-25 mb-25">
-                              <h2 class="mb-5 ">Crabcakes </h2>
-                              <p>Served with Mustard and Tartar Sauce.</p>
-                              <span class="block-price">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Buffalo Wings </h2>
-                              <p>Fried Wings Covered in Hot Sauce and Served with Blue Cheese Dressing.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Quesadilla </h2>
-                              <p>Grilled Flour Tortilla Filled with Melted Cheese, Green Onions.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Lettuce Wraps </h2>
-                              <p>Create Your Own Thai Lettuce Rolls! Satay Chicken Strips, Carrots.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content mb-25">
-                              <h2 class="mb-5 ">Tex Mex Eggrolls </h2>
-                              <p>Spicy Chicken, Corn, Black Beans, Peppers, Onions and Melted.</p>
-                              <span class="block-price ">$14</span> 
-                           </div>
-                           <div class="block-cat">
-                              <h2 class="mb-30">kids </h2>
-                           </div>
-                           <div class="block-content pb-25 mb-25">
-                              <h2 class="mb-5 ">Kids' Pasta </h2>
-                              <p>Served with Bowtie Pasta. Choose from Butter and Parmesan.</p>
-                              <span class="block-price">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Kids' Desserts </h2>
-                              <p>Choose from Kids' Scoop of Ice Cream, Kids' Mini Hot Fudge.</p>
-                              <span class="block-price ">$14</span> 
-                           </div>
-                        </div>
-                        <div class="col-sm-5 text-center ">
-                           <div class="block-cat">
-                              <h2 class="mb-30">main  </h2>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Pizza and Salad </h2>
-                              <p>A Smaller Version of Our Pizzas with a Small Green Salad.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Lunch Pasta </h2>
-                              <p>Choose from Our Selection of Lunch Sized Pastas: Fettuccini Alfredo.</p>
-                              <span class="block-price ">$14</span>
-                              <span class="dots"></span> 
-                           </div>
-                           <div class="block-content mb-25">
-                              <h2 class="mb-5 ">Lunch Salmon  </h2>
-                              <p>Your Choice of: Herb Crusted Filet of Salmon, Miso Salmon.</p>
-                              <span class="block-price">$14</span>
-                           </div>
-                           <div class="block-cat">
-                              <h2 class="mb-30">pizza  </h2>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Cheese Pizza</h2>
-                              <p>Topped with Fresh Mozzarella, White Cheddar and Fontina Cheeses.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Pepperoni Pizza </h2>
-                              <p>Fresh Mozzarella and Fontina Cheeses and is Topped.</p>
-                              <span class="block-price ">$14</span>
-                              <span class="dots"></span> 
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">B.B.Q. Chicken Pizza </h2>
-                              <p>Smoked Gouda, Red Onion and Cilantro.</p>
-                              <span class="block-price ">$14</span>
-                              <span class="dots"></span> 
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Margherita Pizza  </h2>
-                              <p>Fresh Mozzarella, Basil and Tomato Sauce.</p>
-                              <span class="block-price">$14</span>
-                           </div>
-                        </div>
-                     </li>
-                     <!--Menu list-->
-                     <li class="block-list">
-                        <div class="col-sm-5  col-sm-offset-1 text-center">
-                           <div class="block-cat">
-                              <h2 class="mb-30">cheesecake </h2>
-                           </div>
-                           <div class="block-content pb-25 mb-25">
-                              <h2 class="mb-5 ">Original </h2>
-                              <p>Our Famous Creamy Cheesecake with a Graham Cracker Crust.</p>
-                              <span class="block-price">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Strawberry Cheesecake </h2>
-                              <p>The Original Topped with Glazed Fresh Strawberries.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Lemon Meringue Cheesecake </h2>
-                              <p>Lemon Cream Cheesecake Topped with Layers of Lemon Mousse.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Mango Key Lime Cheesecake </h2>
-                              <p>Topped with Mango Mousse on a Vanilla Coconut Macaroon Crust.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content pb-25  mb-25">
-                              <h2 class="mb-5 ">Tiramisu Cheesecake </h2>
-                              <p>Our Wonderful Cheesecake and Tiramisu Combined into one Dessert.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Low Carb Cheesecake </h2>
-                              <p>Smooth and Creamy with a walnut Crust Sweetened with Stevia.</p>
-                              <span class="block-price ">$14</span> 
-                           </div>
-                        </div>
-                        <div class="col-sm-5 text-center ">
-                           <div class="block-cat">
-                              <h2 class="mb-30">ice cream  </h2>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Hot Fudge Sundae </h2>
-                              <p>Topped with Whipped Cream and Almonds.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Chocolate Brownie Sundae </h2>
-                              <p>Our own Fabulous Godiva Chocolate Brownie, Vanilla Ice Cream, Hot Fudge.</p>
-                              <span class="block-price ">$14</span>
-                              <span class="dots"></span> 
-                           </div>
-                           <div class="block-content mb-25">
-                              <h2 class="mb-5 ">Bowl of Ice Cream  </h2>
-                              <p>Two and a half scoops of your choice of Vanilla or Coffee Ice.</p>
-                              <span class="block-price">$14</span>
-                           </div>
-                           <div class="block-cat">
-                              <h2 class="mb-30">specialty</h2>
-                           </div>
-                           <div class="block-content pb-25 mb-25">
-                              <h2 class="mb-5 ">Carrot Cake </h2>
-                              <p>Deliciously Moist Layers of Carrot Cake and Our Famous Cream.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Black-Out Cake  </h2>
-                              <p>Our Deepest, Richest Chocolate Cake with Chocolate Chips.</p>
-                              <span class="block-price">$14</span>
-                           </div>
-                        </div>
-                     </li>
-                     <!--Menu list-->
-                     <li class="block-list">
-                        <div class="col-sm-5  col-sm-offset-1 text-center">
-                           <div class="block-cat">
-                              <h2 class="mb-30">iced drinks </h2>
-                           </div>
-                           <div class="block-content pb-25 mb-25">
-                              <h2 class="mb-5 ">Strawberry Fruit Smoothie </h2>
-                              <p>Strawberries, Orange and Pineapple Juices, Coconut and Banana.</p>
-                              <span class="block-price">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Tropical Smoothie </h2>
-                              <p>Mango, Passion Fruit, Pineapple and Coconut All Blended with Ice.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Frozen Iced Mango </h2>
-                              <p>Mango, Tropical Juices and a Hint of Coconut Blended with Ice and.</p>
-                              <span class="block-price ">$14</span>
-                              <span class="dots"></span> 
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Peach Smoothie </h2>
-                              <p>Crushed Peaches and Juice All Blended with Ice and Swirled with.</p>
-                              <span class="block-price ">$14</span> 
-                           </div>
-                        </div>
-                        <div class="col-sm-5 text-center ">
-                           <div class="block-cat">
-                              <h2 class="mb-30">hot drinks  </h2>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Café Latte </h2>
-                              <p>Double Espresso, Extra Steamed Milk.</p>
-                              <span class="block-price ">$14</span> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Café Mocha </h2>
-                              <p>Espresso, Chocolate, Steamed Milk, Whipped Cream.</p>
-                              <span class="block-price ">$14</span>
-                              <span class="dots"></span> 
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Hot Chocolate </h2>
-                              <p>A huge, steamy serving of real hot chocolate with whipped cream.</p>
-                              <span class="block-price ">$14</span>
-                              <span class="dots"></span> 
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Double Espresso  </h2>
-                              <p>Enjoy a double shot of espresso.</p>
-                              <span class="block-price">$14</span>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-                  <!--End tabs-->
-               </div>
-               <!--End row-->
+                    </li>
+                </ul>
+                <!--End tabs-->
+        </div>
+        <!--End container-->
+        <!--Container-->
+        <div class="container">
+            
             </div>
-            <!--End container-->
-         </section>
-         <!--End menu section-->
+            <!--End row-->
+        </div>
+        <!--End container-->
+    </section>
+    <!--End menu section-->
 
-<!--==============================footer=================================-->
-<footer>
-  <div class="main">
-    <div class="aligncenter"> <span>Copyright &copy; <a href="#">The Nirvana Catering Services</a> All Rights Reserved</span> Design by <a target="_blank" href="http://www.thenirvanacatering.com/">thenirvanacatering.com</a> </div>
-  </div>
-</footer>
-<script type="text/javascript">Cufon.now();</script>
+    <!--==============================footer=================================-->
+    <footer>
+        <div class="main">
+            <div class="aligncenter"> <span>Copyright &copy; <a href="#">The Nirvana Catering Services</a> All Rights Reserved</span> Design by <a target="_blank" href="http://www.thenirvanacatering.com/">thenirvanacatering.com</a> </div>
+        </div>
+    </footer>
+   
 </body>
+<script type="text/javascript">
+    Cufon.now();
+    </script>
 </html>
