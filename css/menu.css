@@ -1,0 +1,138 @@
+/* Menu section*/
+.block-tabs li {
+    border-bottom: 1px solid #f2f2f2;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    margin: 0 -2px;
+    padding: 0 28px;
+    position: relative;
+    top: 1px;
+    color: #353031;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.block-tabs li.active {
+    border-bottom: 2px solid #b0988b;
+}
+
+.block-tab li {
+    display: none;
+    padding-top: 30px;
+}
+
+.block-tab li.active {
+    display: block;
+}
+
+.block-cat h2 {
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: none;
+    color: #a68b7c;
+    line-height: 50px
+}
+
+.block-price {
+    color: #a68b7c;
+    font-weight: 700;
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-sm-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 41.66666667%;
+}
+
+.col-sm-12 {
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-sm-offset-1 {
+    margin-left: 8.33333333%;
+}
+
+.block-cat h2, h1.large {
+    font-family: 'Kristi', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mb-25 {
+    margin-bottom: 25px !important;
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
+.mb-3 {
+    margin-bottom: 3px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.block-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.pb-25 {
+    padding-bottom: 25px !important;
+}
+
+.pb-10 {
+    padding-bottom: 10px !important;
+}
+
+.block-price {
+    color: #a68b7c;
+    font-weight: 700;
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.dots {
+    background-image: radial-gradient(circle closest-side, rgba(176, 152, 139, 0.25) 80%, #fff 10%);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: 4px 2px;
+    border: 0 none;
+    display: block;
+    height: 3px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* End menu section*/
