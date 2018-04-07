@@ -35,7 +35,7 @@
 #page3 #content {
 	padding:25px 0 48px;
 }
-/**********shipping.html************/
+/**********delivery.html************/
 #page4 #content {
 	padding:25px 0 42px;
 }
@@ -53,6 +53,7 @@
 /**********contact.html************/
 #page6 #content {
 	padding:25px 0 42px;
+	height: 1050px;
 }
 #page6 .col-1 {
 	width:290px;
