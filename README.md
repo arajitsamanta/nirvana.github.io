@@ -1,7 +1,7 @@
 ## Welcome to The Nirvana Catering Website
 
-  Name: The nirvana catering.  
-  Description: Nirvana catering is a home made indian food catering services based out of St Louis. 
+  ***Name:*** The nirvana catering.  
+  ***Description:*** Nirvana catering is a home made indian food catering services based out of St Louis. 
 
 ### Feature
 
