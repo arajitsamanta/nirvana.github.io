@@ -78,7 +78,7 @@ body {
     width: 940px;
     padding: 0;
     margin: 0 auto;
-    height: 500px;
+    height: 1155px;
 }
 
 a {
@@ -168,7 +168,7 @@ p {
 }
 
 .color-2 {
-    color: #c42e02;
+    color: blue;
 }
 
 .color-3 {
@@ -329,7 +329,7 @@ h2 span {
 .row-bot-bg {
     width: 100%;
     min-height: 122px;
-    background: #795548b3;
+    background: #e46d41f7;
 }
 
 
@@ -836,11 +836,11 @@ dl span {
 footer {
     width: 100%;
     padding: 23px 0 30px;
-    color: #7bc3d1;
+    color: #fff;
 }
 
 footer a {
-    color: #d3d3d5;
+    color: #c42e02;
 }
 
 footer span {
@@ -859,4 +859,14 @@ footer .main {
 .list-services li {
     float: left;
     padding: 0 0 0 10px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
 }
