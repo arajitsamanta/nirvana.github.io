@@ -1,8 +1,7 @@
 ## Welcome to The Nirvana Catering Website
 
-  Name: The nirvana catering.
-  
-	Description: Nirvana catering is a home made indian food catering services based out of St Louis. 
+  Name: The nirvana catering.  
+  Description: Nirvana catering is a home made indian food catering services based out of St Louis. 
 
 ### Feature
 
@@ -10,7 +9,7 @@ For more details see [The Nirvana Catering](http://thenirvanacatering.com).
 
 ### Installation
 
-* git clone 
+* git clone https://github.com/arajitsamanta/nirvana.github.io.git
 * Import project into your favorite IDE
 * Run "mvn clean install"
 
