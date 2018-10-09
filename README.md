@@ -10,8 +10,8 @@ For more details see [The Nirvana Catering](http://thenirvanacatering.com).
 ### Installation
 
 * git clone https://github.com/arajitsamanta/nirvana.github.io.git
-* Import project into your favorite IDE
-* Run "mvn clean install"
+* Go to project root directory.
+* Run "gulp server"
 
 ### Support or Contact
 
