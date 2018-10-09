@@ -1,0 +1,29 @@
+{
+  "name": "nirvana.github.io",
+  "version": "1.0.0",
+  "description": "Nirvana Catering",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.24.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arajitsamanta/nirvana.github.io.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "gulp",
+    "html"
+  ],
+  "author": "Arajit Samanta",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/arajitsamanta/nirvana.github.io/issues"
+  },
+  "homepage": "https://github.com/arajitsamanta/nirvana.github.io#readme"
+}
