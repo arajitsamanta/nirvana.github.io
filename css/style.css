@@ -516,12 +516,12 @@ h6 {
     font-size: 13px;
     line-height: 1.23em;
     color: #fff;
-    background: url(../images/button2-tail.gif) 0 0 repeat-x #779f02;
+    background: url(../images/button2-tail.gif) 0 0 repeat-x #323e0e;
     cursor: pointer;
 }
 
 .button-2:hover {
-    background: #779f02;
+    background: #323e0e;
 }
 
 .list-1 li {

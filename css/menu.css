@@ -64,6 +64,11 @@
     margin-left: 8.33333333%;
 }
 
+.order-button-col-sm-offset {
+    margin-left: 45%;
+}
+
+
 .block-cat h2, h1.large {
     font-family: 'Kristi', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
 }
